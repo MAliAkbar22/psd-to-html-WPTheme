@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PSD to HTML | WordPress Theme Development</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FontAwosome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header-section">
+      <div class="container">
+        <div id="head" class="header-container hamburger-menu">
+          <div id="logo" class="logo hamburger-logo">
+            <img src="./assets/logo.png" alt="Logo" />
+          </div>
+          <div id="navbar" class="navbar hamburger-nav">
+            <nav>
+              <ul class="menu">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Features</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Features1</a></li>
+                    <li><a href="#">Features2</a></li>
+                    <li><a href="#">Features3</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-link">
+                  <a href="#">Categories</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Category1</a></li>
+                    <li><a href="#">Category2</a></li>
+                    <li><a href="#">Category3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Shop</a>
+                  <ul class="dropdown">
+                    <li><a href="#">Shop1</a></li>
+                    <li><a href="#">Shop2</a></li>
+                    <li><a href="#">Shop3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div id="header-cta" class="header-cta hamburger-cta">
+            <div class="header-icons">
+              <a href="https://www.facebook.com/"
+                ><img src="./assets/facebook.png" alt="social-icons"
+              /></a>
+              <a href="https://www.twitter.com/">
+                <img src="./assets/twitter.png" alt="social-icons"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="./assets/instagram.png" alt="social-icons"
+              /></a>
+              <a href="https://www.pinterest.com/"
+                ><img src="./assets/pinterest.png" alt="social-icons"
+              /></a>
+            </div>
+            <div class="serach-icon">
+              <img src="./assets/search.png" alt="Search-Icon" />
+            </div>
+          </div>
+          <div class="hamburger active">
+            <i onclick="hamburger()" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="hero-section">
+      <div class="container">
+        <div class="hero-container">
+          <div class="hero-featured">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="card-top"
+                />
+                <img
+                  class="featured"
+                  src="./assets/Politics-1.webp"
+                  alt="World-Img"
+                />
+                <div class="card-label">Politics</div>
+              </div>
+              <h1 class="card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+              <p>
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Aenean lacinia bibendum nulla sed consectetur. Cum sociis
+                natoque penatibus et magnis...
+              </p>
+            </div>
+          </div>
+          <div class="hero-right-col">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="card-top"
+                />
+                <img
+                  class="hero-right-img"
+                  src="./assets/Business-1.webp"
+                  alt="World-Img"
+                />
+                <div class="card-label">Business</div>
+              </div>
+              <h1 class="card-heading">
+                Breast Lifts Improvement Without Implants
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="hero-right-img"
+                  src="./assets/World-1.jpg"
+                  alt="World-Img"
+                />
+                <div class="card-label">World</div>
+              </div>
+              <h1 class="card-heading">
+                The 6 Step Non Surgical Facial Rejuvenation Program
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="hero-right-img"
+                  src="./assets/Business-2.webp"
+                  alt="World-Img"
+                />
+                <div class="card-label">Business</div>
+              </div>
+              <h1 class="card-heading">
+                Breast Lifts Improvement Without Implants
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="hero-right-img"
+                  src="./assets/World-2.jpg"
+                  alt="World-Img"
+                />
+                <div class="card-label">World</div>
+              </div>
+              <h1 class="card-heading">
+                The 6 Step Non Surgical Facial Rejuvenation Program
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Section -->
+    <div id="popular-section">
+      <div class="container">
+        <h1 class="popular-heading">Most Popular</h1>
+        <div class="popular-container">
+          <div class="popular-first-col">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="card-top"
+                />
+                <img
+                  class="popular"
+                  src="./assets/Economy-2.jpg"
+                  alt="World-Img"
+                />
+                <div class="card-label">Economy</div>
+              </div>
+              <h1 class="card-heading">
+                Cras justo odio, dapibus ac facilisis in egestas eget quam
+                lobortis.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+          </div>
+          <div class="popular-sec-col">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="card-top"
+                />
+                <img
+                  class="popular"
+                  src="./assets/Business-1.webp"
+                  alt="World-Img"
+                />
+                <div class="card-label">Business</div>
+              </div>
+              <h1 class="card-heading">
+                Cras justo odio, dapibus ac facilisis in egestas eget quam
+                lobortis.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+          </div>
+          <div class="popular-last-col">
+            <div class="popular-posts">
+              <div class="post">
+                <div class="left">
+                  <img src="./assets/Economy-1.webp" alt="Posts" />
+                </div>
+                <div class="right">
+                  <h3>Economy</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+              <div class="post">
+                <div class="left">
+                  <img src="./assets/Politics-4.jpg" alt="Posts" />
+                </div>
+                <div class="right">
+                  <h3>Politics</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+              <div class="post">
+                <div class="left">
+                  <img src="./assets/World-5.jpg" alt="Posts" />
+                </div>
+                <div class="right">
+                  <h3>World</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+              <div class="post">
+                <div class="left">
+                  <img src="./assets/Business-3.jpg" alt="Posts" />
+                </div>
+                <div class="right">
+                  <h3>Business</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ad Section -->
+    <div id="advertisment-section">
+      <div class="container">
+        <div class="advertisment-container">
+          <h1>Ad Here</h1>
+          <img src="./assets/ad.webp" alt="Ad-Img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Poltics Section -->
+    <div id="politics-section">
+      <div class="container">
+        <div class="politics-container">
+          <div class="section-heading">
+            <h1>Politics</h1>
+            <p>View All</p>
+          </div>
+          <div class="politics-posts">
+            <div class="poltics-card">
+              <div class="poltics-card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="poltics-card-top"
+                />
+                <img
+                  class="poltics-img"
+                  src="./assets/Politics-6.png"
+                  alt="World-Img"
+                />
+                <div class="politics-card-label">Politics</div>
+              </div>
+              <h1 class="poltics-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="poltics-card">
+              <div class="poltics-card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="poltics-card-top"
+                />
+                <img
+                  class="poltics-img"
+                  src="./assets/Politics-2.jpg"
+                  alt="World-Img"
+                />
+                <div class="politics-card-label">Politics</div>
+              </div>
+              <h1 class="poltics-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="poltics-card">
+              <div class="poltics-card-img">
+                <img
+                  class="poltics-img"
+                  src="./assets/Politics-3.jpg"
+                  alt="World-Img"
+                />
+                <div class="politics-card-label">Politics</div>
+              </div>
+              <h1 class="poltics-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="poltics-card">
+              <div class="poltics-card-img">
+                <img
+                  class="poltics-img"
+                  src="./assets/Politics-4.jpg"
+                  alt="World-Img"
+                />
+                <div class="politics-card-label">Politics</div>
+              </div>
+              <h1 class="poltics-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="poltics-card">
+              <div class="poltics-card-img">
+                <img
+                  class="poltics-img"
+                  src="./assets/Politics-5.webp"
+                  alt="World-Img"
+                />
+                <div class="politics-card-label">Politics</div>
+              </div>
+              <h1 class="poltics-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Economy Section -->
+    <div id="economy-section">
+      <div class="container">
+        <div class="economy-container">
+          <div class="section-heading">
+            <h1>Economy</h1>
+            <p>View All</p>
+          </div>
+          <div class="economy-posts">
+            <div class="economy-card">
+              <div class="economy-card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="economy-card-top"
+                />
+                <img
+                  class="economy-img"
+                  src="./assets/Economy-4.jpg"
+                  alt="World-Img"
+                />
+                <div class="economy-card-label">Economy</div>
+              </div>
+              <h1 class="economy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="economy-card">
+              <div class="economy-card-img">
+                <img
+                  src="./assets/card-top.png"
+                  alt="Card-Top"
+                  class="economy-card-top"
+                />
+                <img
+                  class="economy-img"
+                  src="./assets/World-5.jpg"
+                  alt="World-Img"
+                />
+                <div class="economy-card-label">Economy</div>
+              </div>
+              <h1 class="economy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="economy-card">
+              <div class="economy-card-img">
+                <img
+                  class="economy-img"
+                  src="./assets/Economy-3.cms"
+                  alt="World-Img"
+                />
+                <div class="economy-card-label">Economy</div>
+              </div>
+              <h1 class="economy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="economy-card">
+              <div class="economy-card-img">
+                <img
+                  class="economy-img"
+                  src="./assets/World-4.jpg"
+                  alt="World-Img"
+                />
+                <div class="economy-card-label">Economy</div>
+              </div>
+              <h1 class="economy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+            <div class="economy-card">
+              <div class="economy-card-img">
+                <img
+                  class="economy-img"
+                  src="./assets/World-3.jpg"
+                  alt="World-Img"
+                />
+                <div class="economy-card-label">Economy</div>
+              </div>
+              <h1 class="economy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </h1>
+              <p class="post-label">
+                by <span class="author">Norman Reedus</span> March 15, 2019
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div id="newsletter-section">
+      <div class="container">
+        <div class="newsletter-container">
+          <div class="newsletter-heading">
+            <h2>Signup for Newsletter</h2>
+            <p>We’ll never share your email address with a third-party</p>
+          </div>
+          <div class="newletter-subscribe">
+            <input type="text" placeholder="Enter your email address" />
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <div class="newsletter-icons">
+            <a href="https://www.facebook.com/"
+              ><img src="./assets/facebook.png" alt="social-icons"
+            /></a>
+            <a href="https://www.twitter.com/">
+              <img src="./assets/twitter.png" alt="social-icons"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="./assets/instagram.png" alt="social-icons"
+            /></a>
+            <a href="https://www.pinterest.com/"
+              ><img src="./assets/pinterest.png" alt="social-icons"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer-section">
+      <div class="container">
+        <div class="footer-container">
+          <div class="logo-section">
+            <img src="./assets/logo.png" alt="footer-logo" />
+            <p>
+              <span>Address : </span>
+              250 Penn Avenue Pittsburgh Pennsylvania 3584 United States
+            </p>
+            <p><span>Email :</span> creativewithjoy@gmail.com</p>
+            <p class="copyright">iDoodle © 2019. All rights reserved.</p>
+          </div>
+          <div class="information">
+            <h3>Information</h3>
+            <li><a href="#">Job Opportunities</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </div>
+          <div class="about-kaldi">
+            <h3>About Kaldi</h3>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Coporate</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </div>
+          <div class="tweet">
+            <h3>Tweet</h3>
+            <p>
+              April doesn’t have to be the cruellest month. This year, why not
+              make it a month to remember by learning something new?
+              <a href="">https://enva.to/Vs </a>
+            </p>
+            <p>
+              <span><img src="./assets/tweet.png" alt="tweet" /></span> 1:00 AM
+              - 4 Apr 2019
+            </p>
+          </div>
+        </div>
+        <p class="developer">Designed By: Muhammad Ali Akbar &#169; 2023</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="main.js"></script>
+  </body>
+</html>
